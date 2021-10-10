@@ -34,6 +34,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 >> Interactive software
 >> - Arduino can be used with many software, such as processing, brain-link, etc. Their cooperation can create many interesting visually interactive software or pages. Interaction with the computer is no longer limited to the mouse and keyboard. Sound, infrared, touch, pressure human motion catcher and many other facts can become the input source of the computer.
 
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午9.10.23.png">
+</center>
+
 > #### The choice for Arduino
 >> - The official Arduino team adopted the Creative Commons license. Anyone is allowed to produce and sell copies of the Arduino development board. Therefore, there are two kinds of development boards.Therefore, there are two kinds of development boards, one is the official board, and the other is the clone board of other manufacturers. 
 >> 
