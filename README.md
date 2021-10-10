@@ -12,7 +12,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 > - The hardware part is an Arduino board that can be used for circuit connection, and the software part is Arduino IDE which is a program in the computer that used for development.
 > - Software（Arduino IDE）can be downloaded from [Arduino](https://www.arduino.cc/en/software/)
 
-![图片](/docs/1.jpg "arduino")
+<figure class="half">
+    <img src="/docs/arduino基础介绍图片裁剪完毕/image1.jpeg">
+    <img src="/docs/arduino基础介绍图片裁剪完毕/image2.jpeg">
+</figure>
 
 > #### The function of Arduino
 >> Output device
