@@ -124,6 +124,7 @@ void loop() {
 >> - When we finished Case 1, we felt a little bit inconvenient in this application for we usually turn on the light with one press and then turn it off with another. In Case 1, however, the light is on immediately when we release the button. So, we did some changes to Case 1 code and made it a pro version.
 
 >> - Here is the code of this case:
+
 ~~~c
 const int buttonPin = 7;
 const int ledPin = 13;
