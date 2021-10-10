@@ -52,7 +52,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 >> 
 >> - Then select the comX in the ‘工具-端口’.
 
-> ### Web
+> #### Web
 >> Circuit drawing at: [Thinkercad](https://www.tinkercad.com/dashboard)
 >> 
 >> Recommendations for Color-Ring-Resistance calculation: [Elecfans](http://www.elecfans.com/tools/)
@@ -83,8 +83,43 @@ void loop() {
 
 }
 ```
+> #### Case 2: LED light with a button: pro version
 
-![视频]（/docs/小组作业图片素材/视频1.mp4）
+>> - When we finished Case 1, we felt a little bit inconvenient in this application for we usually turn on the light with one press and then turn it off with another. In Case 1, however, the light is on immediately when we release the button. So, we did some changes to Case 1 code and made it a pro version.
+
+```c
+const int buttonPin = 7;
+const int ledPin = 13;
+
+// 按键前一个状态
+int oldButtonState = HIGH;
+// 按键状态
+int buttonState = HIGH;
+// led灯状态，false->没亮，true->亮
+boolean ledState = false;
+
+
+void setup() {
+  // 使用内置上拉电阻
+  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // 单次按动开关LED灯
+  oldButtonState = buttonState;
+  buttonState = digitalRead(buttonPin);
+  if(buttonState == LOW && oldButtonState == HIGH) {
+    if(ledState == true) {
+      digitalWrite(ledPin, LOW);
+    } 
+    else {
+      digitalWrite(ledPin, HIGH);
+    }
+    ledState = !ledState;
+  }
+}
+```
 
 ### 模型
 这是一个测试链接[模型](https://github.com/wjqbugkiller/wjqbugkiller.github.com/blob/main/docs/%E6%A8%A1%E5%9E%8B.pptx)
