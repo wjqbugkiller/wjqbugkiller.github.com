@@ -124,7 +124,7 @@ void loop() {
 >> - When we finished Case 1, we felt a little bit inconvenient in this application for we usually turn on the light with one press and then turn it off with another. In Case 1, however, the light is on immediately when we release the button. So, we did some changes to Case 1 code and made it a pro version.
 
 >> - Here is the code of this case:
-```c
+~~~c
 const int buttonPin = 7;
 const int ledPin = 13;
 
@@ -156,7 +156,8 @@ void loop() {
     ledState = !ledState;
   }
 }
-```
+~~~
+
 >> - Here is the video:
 
 >>> - [Video:Case 2]()
@@ -183,7 +184,7 @@ void loop() {
 
 >> - Here is the code:
 
-```c
+~~~c
 #include <Wire.h>
 #include "paj7620.h"
 #define I2C_ADDR    0x79
@@ -325,7 +326,7 @@ void loop() {
   }
   delay(200);
 }
-```
+~~~
 
 >> - Here is the video:
 
@@ -351,7 +352,9 @@ void loop() {
 > #### Exploded Views
 
 <center class="half">
-    <img src="/docs/图片/截屏2021-10-10 下午10.19.13.png">
+    <img src="/docs/模型图片/动图1.gif">
+    <img src="/docs/模型图片/动图3.gif">
+    <img src="/docs/模型图片/动图4.gi">
 </center>
 
 > #### Components
