@@ -27,6 +27,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 >> Art interactive works
 >> - Arduino can also build art interactive works though integrating ideas and sensors in a simple or unified way. Using sensors to sense and affect the environment by controlling lights, motors and other devices. This kind of work can be an original object, a wall, or combined with other objects in life.
 
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午8.56.54.png">
+</center>
+
 >> Interactive software
 >> - Arduino can be used with many software, such as processing, brain-link, etc. Their cooperation can create many interesting visually interactive software or pages. Interaction with the computer is no longer limited to the mouse and keyboard. Sound, infrared, touch, pressure human motion catcher and many other facts can become the input source of the computer.
 
