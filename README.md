@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
-![avatar](/wjqbugkiller.github.com/docs/1.jpg)
+![avatar](https://raw.githubusercontent.com/wjqbugkiller/wjqbugkiller.github.com/main/docs/1.jpg)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
