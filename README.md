@@ -4,6 +4,7 @@ You can use the [editor on GitHub](https://github.com/wjqbugkiller/wjqbugkiller.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+-------------------------
 
 ### 基础介绍
 
@@ -83,6 +84,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 >> Circuit drawing at: [Thinkercad](https://www.tinkercad.com/dashboard)
 >> 
 >> Recommendations for Color-Ring-Resistance calculation: [Elecfans](http://www.elecfans.com/tools/)
+
+-------------------------
 
 ### 小组作业介绍
 
@@ -303,7 +306,9 @@ void loop() {
 ```
 
 >> - Here is the video:
->> 
+
+-------------------------
+
 ### 模型
 
 > #### An Elastic (rubber band) Powered Car
