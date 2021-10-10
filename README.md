@@ -4,6 +4,7 @@ You can use the [editor on GitHub](https://github.com/wjqbugkiller/wjqbugkiller.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+
 ### 基础介绍
 
 > #### What is Arduino
@@ -11,12 +12,13 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 > - The hardware part is an Arduino board that can be used for circuit connection, and the software part is Arduino IDE which is a program in the computer that used for development.
 > - Software（Arduino IDE）can be downloaded from [Arduino](https://www.arduino.cc/en/software/)
 
-![图片](/docs/1.jpg "arduino""）![图片](/docs/1.jpg "arduino")
+![图片](/docs/1.jpg "arduino")
 
 > #### The function of Arduino
 >> Output device
 >> - Arduino can use existing electronic components, such as switches, drives or many other sensors to make an interactive device. It can be used to make hardware equipment such as electronic production or creative design prototypes.
-
+>> Art interactive works
+>> -Arduino can also build art interactive works though integrating ideas and sensors in a simple or unified way. Using sensors to sense and affect the environment by controlling lights, motors and other devices. This kind of work can be an original object, a wall, or combined with other objects in life.
 
 ### 小组作业介绍
 
