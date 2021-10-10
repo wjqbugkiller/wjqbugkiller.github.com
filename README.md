@@ -97,7 +97,7 @@ This is where a group of exhausted people try to make something valuable. Do not
 
 >> - Here is the code of this case:
 
-```c
+~~~c
 int ledPin=13;//led连接pin的13脚
 int inPin=7;
 int val=0;
@@ -114,7 +114,7 @@ void loop() {
   digitalWrite(ledPin,val);
 
 }
-```
+~~~
 
 >> - Here is the video:
 >>> - [Video:Case 1]()
