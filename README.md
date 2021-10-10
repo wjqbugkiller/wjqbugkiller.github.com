@@ -278,3 +278,17 @@ void loop() {
 >> - Here is the video:
 >> 
 ### 模型
+
+> #### An Elastic (rubber band) Powered Car
+>> - We used Creo to build a simple 3D model of an elastic (rubber band) powered car. The car is driven by rubber bands and can travel a distance in a straight line. Its main components are: body bracket (using lighter carbon fiber tubes to reduce resistance), connection structure , Bevel gears, bearings, screws, rotating modules, tires, wheels.
+
+> #### Three-view Drawing
+> 
+> #### Exploded Views
+> 
+> #### Components
+>> - In the process of creating the model, we used functions such as sketching, extruding, drafting, building threads, rounding, circular bending, drawing space curves, boundary blending, surface merging, solidification, dimensioning, etc. Since Creo has certain limitations when creating curved surfaces, the car shows more straight lines and planes, and it takes more time to create the surface of the racing wheel hub.
+
+> #### The position of the rubber bands
+
+
