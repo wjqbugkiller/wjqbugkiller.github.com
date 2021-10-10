@@ -117,7 +117,7 @@ void loop() {
 ~~~
 
 >> - Here is the video:
->>> - [Video:Case 1]()
+>>> - [Video:Case 1](https://www.bilibili.com/video/BV1cf4y1g74L?p=1)
 
 > #### Case 2: LED light with a button: pro version
 
@@ -161,7 +161,7 @@ void loop() {
 
 >> - Here is the video:
 
->>> - [Video:Case 2]()
+>>> - [Video:Case 2](https://www.bilibili.com/video/BV1cf4y1g74L?p=2)
 
 > #### Case 3: try something new: Speech recognition module & Gesture recognition module
 >> - For some of our group members have tried Arduino before, we have some other modules which are not included in the basic Arduino kit. So we used the speech recognition module and the gesture recognition module in our Case 3.
@@ -330,7 +330,7 @@ void loop() {
 
 >> - Here is the video:
 
->>> - [Video:Case 3]()
+>>> - [Video:Case 3](https://www.bilibili.com/video/BV1cf4y1g74L?p=3)
 
 -------------------------
 
