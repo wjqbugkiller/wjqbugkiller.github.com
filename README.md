@@ -29,10 +29,20 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 >> - Both official boards and clone boards are legal products.
 >> - The production process of the official board will be more excellent and more expensive.
 >> - There are many types of Arduino development board, which can be roughly divided into five categories: Entry Level, Enhanced Features, Internet of Things, Education, and Retired.
->> - You can view all of them from the official website:[arduino.Products](https://www.arduino.cc/en/Main/Products)
+>> - You can view all of them from the official website:[Arduino.Products](https://www.arduino.cc/en/Main/Products)
 >> - There are not much options for us, we got only Arduino UNO. We have two pieces in our hands. One is turquoise and the other is black. They are both made in China. We can easily buy them in a cheap price.
 
+> #### Connection with computer
+>> Wire
+>> - Two types of wires in our group
+>> Development board and port selection
+>> - ‘Arduino on comX’ is in the lower right corner of the Arduino IDE. X stands for number.
+>> - Click the ‘工具 – 开发板’ at the toolbar and choose the Arduino type. 
+>> - Then select the comX in the ‘工具-端口’.
 
+> ### Web
+>> Circuit drawing at: [Thinkercad](https://www.tinkercad.com/dashboard)
+>> Recommendations for Color-Ring-Resistance calculation: [Elecfans](http://www.elecfans.com/tools/)
 
 ### 小组作业介绍
 
