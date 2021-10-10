@@ -12,7 +12,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 ### 模型
-![avatar](https://raw.githubusercontent.com/wjqbugkiller/wjqbugkiller.github.com/main/docs/模型.pptx)
+这是一个测试链接[模型](https://github.com/wjqbugkiller/wjqbugkiller.github.com/blob/main/docs/%E6%A8%A1%E5%9E%8B.pptx)
 
 ### Markdown
 
