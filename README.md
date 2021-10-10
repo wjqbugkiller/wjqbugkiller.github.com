@@ -92,7 +92,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 > ### Case 1: LED light with a button
 
 >> - We tried this case in the class to learn about the basic digital I/O in Arduino. In this case, we can control the LED light with a button. When the button is pressed,  the LED light is off; otherwise the light is on.
-Here is the circuit of this case.
+>> - Here is the circuit of this case:
+
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午9.30.57.png">
+</center>
 
 >> - Here is the code and the video of this case:
 ```c
@@ -154,11 +158,23 @@ void loop() {
 
 > #### Case 3: try something new: Speech recognition module & Gesture recognition module
 >> - For some of our group members have tried Arduino before, we have some other modules which are not included in the basic Arduino kit. So we used the speech recognition module and the gesture recognition module in our Case 3.
->> 
+
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午9.33.37.png">
+</center>
+
 >> - In this case, the user should speak the word “kai shi”（开始）to start and get into the gesture recognition mode, which will turn on the green LED light at the same time to show that you are allowed to do the gesture. When the user move his ore her hand left and right, the red light will be on; but if the hand is moving up and down, the yellow light will be on otherwise. After finishing the gesture recognition, the green light and the indicator light will be off and the device will get into the next loop.
->>
+
+<center class="half">
+    <img src="/docs/图片/图片5.png">
+</center>
+
 >> - Here is the circuit:
->>
+
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午10.03.39.png">
+</center>
+
 >> - Here is the code:
 
 ```c
@@ -314,13 +330,31 @@ void loop() {
 > #### An Elastic (rubber band) Powered Car
 >> - We used Creo to build a simple 3D model of an elastic (rubber band) powered car. The car is driven by rubber bands and can travel a distance in a straight line. Its main components are: body bracket (using lighter carbon fiber tubes to reduce resistance), connection structure , Bevel gears, bearings, screws, rotating modules, tires, wheels.
 
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午10.15.15.png">
+</center>
+
 > #### Three-view Drawing
-> 
+
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午10.17.39.png">
+</center>
+
 > #### Exploded Views
-> 
+
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午10.19.13.png">
+</center>
+
 > #### Components
 >> - In the process of creating the model, we used functions such as sketching, extruding, drafting, building threads, rounding, circular bending, drawing space curves, boundary blending, surface merging, solidification, dimensioning, etc. Since Creo has certain limitations when creating curved surfaces, the car shows more straight lines and planes, and it takes more time to create the surface of the racing wheel hub.
 
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午10.21.04.png">
+</center>
+
 > #### The position of the rubber bands
 
-
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午10.12.03.png">
+</center>
