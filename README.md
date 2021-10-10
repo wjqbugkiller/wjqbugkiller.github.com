@@ -13,8 +13,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 > - Software（Arduino IDE）can be downloaded from [Arduino](https://www.arduino.cc/en/software/)
 
 <figure class="half">
-    <img src="/docs/arduino基础介绍图片裁剪完毕/image1.jpeg">
-    <img src="/docs/arduino基础介绍图片裁剪完毕/image2.jpg">
+    <img src="/docs/arduino基础介绍图片裁剪完毕/image1.jpeg"><img src="/docs/arduino基础介绍图片裁剪完毕/image2.jpg">
 </figure>
 
 > #### The function of Arduino
