@@ -114,7 +114,7 @@ void loop() {
 
 }
 ```
->> [Video:Case 1]()
+>>> [Video:Case 1]()
 
 > #### Case 2: LED light with a button: pro version
 
