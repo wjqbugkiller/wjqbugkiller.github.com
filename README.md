@@ -9,7 +9,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 > #### What is Arduino
 > - Arduino is an open source electronic platform that includes hardware and software.
 > - The hardware part is an Arduino board that can be used for circuit connection, and the software part is Arduino IDE which is a program in the computer that used for development.
-> - Software（Arduino IDE）can be downloaded from[Arduino](https://www.arduino.cc/en/software/)
+> - Software（Arduino IDE）can be downloaded from [Arduino](https://www.arduino.cc/en/software/)
+
+![这是图片](https://github.com/wjqbugkiller/wjqbugkiller.github.com/blob/main/docs/1.jpg "arduino")
 
 
 ### 小组作业介绍
