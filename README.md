@@ -59,7 +59,31 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### 小组作业介绍
 
-<hi> it's a test <hi>
+> ### Case 1: LED light with a button
+
+>> - We tried this case in the class to learn about the basic digital I/O in Arduino. In this case, we can control the LED light with a button. When the button is pressed,  the LED light is off; otherwise the light is on.
+Here is the circuit of this case.
+
+>> - Here is the code and the video of this case.
+、、、arduino
+int ledPin=13;//led连接pin的13脚
+int inPin=7;
+int val=0;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(ledPin,OUTPUT);
+  pinMode(inPin,INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  val=digitalRead(inPin);
+  digitalWrite(ledPin,val);
+
+}
+、、、
+
 ### 模型
 这是一个测试链接[模型](https://github.com/wjqbugkiller/wjqbugkiller.github.com/blob/main/docs/%E6%A8%A1%E5%9E%8B.pptx)
 
