@@ -114,7 +114,8 @@ void loop() {
 
 }
 ```
->>> [Video:Case 1]()
+>> - Here is the video:
+>>> - [Video:Case 1]()
 
 > #### Case 2: LED light with a button: pro version
 
@@ -156,7 +157,7 @@ void loop() {
 ```
 >> - Here is the video:
 
->> [Video:Case 2]()
+>>> - [Video:Case 2]()
 
 
 > #### Case 3: try something new: Speech recognition module & Gesture recognition module
@@ -326,7 +327,7 @@ void loop() {
 
 >> - Here is the video:
 
->> [Video:Case 3]()
+>>> - [Video:Case 3]()
 
 -------------------------
 
