@@ -64,7 +64,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 >> - We tried this case in the class to learn about the basic digital I/O in Arduino. In this case, we can control the LED light with a button. When the button is pressed,  the LED light is off; otherwise the light is on.
 Here is the circuit of this case.
 
->> - Here is the code and the video of this case.
+>> - Here is the code and the video of this case:
 ```c
 int ledPin=13;//led连接pin的13脚
 int inPin=7;
@@ -87,6 +87,7 @@ void loop() {
 
 >> - When we finished Case 1, we felt a little bit inconvenient in this application for we usually turn on the light with one press and then turn it off with another. In Case 1, however, the light is on immediately when we release the button. So, we did some changes to Case 1 code and made it a pro version.
 
+>> - Here is the code and the video of this case:
 ```c
 const int buttonPin = 7;
 const int ledPin = 13;
@@ -121,37 +122,159 @@ void loop() {
 }
 ```
 
-### 模型
-这是一个测试链接[模型](https://github.com/wjqbugkiller/wjqbugkiller.github.com/blob/main/docs/%E6%A8%A1%E5%9E%8B.pptx)
+> #### Case 3: try something new: Speech recognition module & Gesture recognition module
+>> - For some of our group members have tried Arduino before, we have some other modules which are not included in the basic Arduino kit. So we used the speech recognition module and the gesture recognition module in our Case 3.
+>> 
+>> - In this case, the user should speak the word “kai shi”（开始）to start and get into the gesture recognition mode, which will turn on the green LED light at the same time to show that you are allowed to do the gesture. When the user move his ore her hand left and right, the red light will be on; but if the hand is moving up and down, the yellow light will be on otherwise. After finishing the gesture recognition, the green light and the indicator light will be off and the device will get into the next loop.
+>>
+>> - Here is the circuit:
+>>
+>> - Here is the code:
 
-### Markdown
+```c
+#include <Wire.h>
+#include "paj7620.h"
+#define I2C_ADDR    0x79
+#define ASR_RESULT_ADDR           100
+//识别结果存放处，通过不断读取此地址的值判断是否识别到语音，不同的值对应不同的语音，
+#define ASR_WORDS_ERASE_ADDR      101//擦除所有词条
+#define ASR_MODE_ADDR             102
+//识别模式设置，值范围1~3
+//1：循环识别模式。状态灯常亮（默认模式）
+//2：口令模式，以第一个词条为口令。状态灯常灭，当识别到口令词时常亮，等待识别到新的语音,并且读取识别结果后即灭掉
+//3：按键模式，按下开始识别，不按不识别。支持掉电保存。状态灯随按键按下而亮起，不按不亮
+#define ASR_ADD_WORDS_ADDR        160//词条添加的地址，支持掉电保存
+int i;
+unsigned char result; // Read Bank_0_Reg_0x43/0x44 for gesture result.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+bool WireWriteByte(uint8_t val)
+{
+  Wire.beginTransmission(I2C_ADDR);
+  Wire.write(val);
+  if ( Wire.endTransmission() != 0 ) {
+    return false;
+  }
+  return true;
+}
 
-```markdown
-Syntax highlighted code block
+bool WireWriteDataArray(  uint8_t reg, uint8_t *val, unsigned int len)
+{
+  unsigned int i;
 
-# Header 1
-## Header 2
-### Header 3
+  Wire.beginTransmission(I2C_ADDR);
+  Wire.write(reg);
+  for (i = 0; i < len; i++) {
+    Wire.write(val[i]);
+  }
+  if ( Wire.endTransmission() != 0 ) {
+    return false;
+  }
+  return true;
+}
 
-- Bulleted
-- List
+int WireReadDataArray(   uint8_t reg, uint8_t *val, unsigned int len)
+{
+  unsigned char i = 0;
+  /* Indicate which register we want to read from */
+  if (!WireWriteByte(reg)) {
+    return -1;
+  }
+  Wire.requestFrom(I2C_ADDR, len);
+  while (Wire.available()) {
+    if (i >= len) {
+      return -1;
+    }
+    val[i] = Wire.read();
+    i++;
+  }
+  /* Read block data */
+  return i;
+}
 
-1. Numbered
-2. List
+/*
+   添加词条函数，
+   idNum：词条对应的识别号，1~255随意设置。识别到该号码对应的词条语音时，
+          会将识别号存放到ASR_RESULT_ADDR处，等待主机读取，读取后清0
+   words：要识别汉字词条的拼音，汉字之间用空格隔开
+   执行该函数，词条是自动往后排队添加的。
+*/
+bool ASRAddWords(unsigned char idNum, unsigned char *words)
+{
 
-**Bold** and _Italic_ and `Code` text
+  Wire.beginTransmission(I2C_ADDR);
+  Wire.write(ASR_ADD_WORDS_ADDR);
+  Wire.write(idNum);
+  Wire.write(words, strlen(words));
+  if ( Wire.endTransmission() != 0 ) {
+    delay(10);
+    return false;
+  }
+  delay(10);
+  return true;
+}
 
-[Link](url) and ![Image](src)
+
+void gesture() {
+  uint8_t data = 0;
+  paj7620ReadReg(0x43, 1, &data);
+  if (data == GES_LEFT_FLAG || data == GES_RIGHT_FLAG) {  //左右移动手，红灯亮
+    digitalWrite(48, HIGH);
+    digitalWrite(50, LOW);
+    Serial.println("red light on");
+    delay(1500);
+    digitalWrite(48, LOW);
+    result = 0;
+    digitalWrite(46, LOW);
+  }
+  else if (data == GES_UP_FLAG || data == GES_DOWN_FLAG) {  //上下移动手，黄灯亮
+    digitalWrite(50, HIGH);
+    digitalWrite(48, LOW);
+    Serial.println("yellow light on");
+    delay(1500);
+    digitalWrite(50, LOW);
+    result = 0;
+    digitalWrite(46, LOW);
+  }
+}
+
+void setup()
+{
+  paj7620Init();       //初始化手势传感器芯片PAJ7620
+
+  uint8_t ASRMode = 1;//1：循环识别模式    2：口令模式，以第一个词条为口令    3按键模式，按下开始识别
+  Wire.begin();
+  Serial.begin(9600);
+
+#if 1   //添加的词条和识别模式是可以掉电保存的，第一次设置完成后，可以将此段注释掉，即将1改为0，然后重新下载一次程序
+  WireWriteDataArray(ASR_WORDS_ERASE_ADDR, NULL, 0);
+  delay(60);//擦除需要一定的时间
+  ASRAddWords(1, "kai shi");            //开始
+  if (WireWriteDataArray(ASR_MODE_ADDR, &ASRMode, 1))
+    Serial.println("ASR Module Initialization complete");
+  else
+    Serial.println("ASR Module Initialization fail");
+#endif
+  i = 0;
+  Serial.println("Start");
+}
+
+void loop() {
+  delay(1);
+  WireReadDataArray(ASR_RESULT_ADDR, &result, 1);
+
+  if (result) {
+    i = 1;
+    Serial.print("ASR result is:");
+    Serial.println(result);//返回识别结果，即识别到的词条编号
+    digitalWrite(46, HIGH);//绿灯亮
+    while (result == 1) {
+      gesture();
+    }
+  }
+  delay(200);
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wjqbugkiller/wjqbugkiller.github.com/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+>> - Here is the video:
+>> 
+### 模型
