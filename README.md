@@ -26,18 +26,27 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 > #### The choice for Arduino
 >> - The official Arduino team adopted the Creative Commons license. Anyone is allowed to produce and sell copies of the Arduino development board. Therefore, there are two kinds of development boards.Therefore, there are two kinds of development boards, one is the official board, and the other is the clone board of other manufacturers. 
+>> 
 >> - Both official boards and clone boards are legal products.
+>> 
 >> - The production process of the official board will be more excellent and more expensive.
+>> 
 >> - There are many types of Arduino development board, which can be roughly divided into five categories: Entry Level, Enhanced Features, Internet of Things, Education, and Retired.
+>> 
 >> - You can view all of them from the official website:[Arduino.Products](https://www.arduino.cc/en/Main/Products)
+>> 
 >> - There are not much options for us, we got only Arduino UNO. We have two pieces in our hands. One is turquoise and the other is black. They are both made in China. We can easily buy them in a cheap price.
 
 > #### Connection with computer
 >> Wire
+>> 
 >> - Two types of wires in our group
+>> 
 >> Development board and port selection
 >> - ‘Arduino on comX’ is in the lower right corner of the Arduino IDE. X stands for number.
+>> 
 >> - Click the ‘工具 – 开发板’ at the toolbar and choose the Arduino type. 
+>> 
 >> - Then select the comX in the ‘工具-端口’.
 
 > ### Web
