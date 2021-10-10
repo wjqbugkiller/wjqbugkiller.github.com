@@ -65,7 +65,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Here is the circuit of this case.
 
 >> - Here is the code and the video of this case.
-、、、arduino
+```arduino
 int ledPin=13;//led连接pin的13脚
 int inPin=7;
 int val=0;
@@ -82,7 +82,7 @@ void loop() {
   digitalWrite(ledPin,val);
 
 }
-、、、
+```
 
 ### 模型
 这是一个测试链接[模型](https://github.com/wjqbugkiller/wjqbugkiller.github.com/blob/main/docs/%E6%A8%A1%E5%9E%8B.pptx)
