@@ -44,6 +44,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 >> - Both official boards and clone boards are legal products.
 >> 
 >> - The production process of the official board will be more excellent and more expensive.
+
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午9.12.44.png">
+</center>
 >> 
 >> - There are many types of Arduino development board, which can be roughly divided into five categories: Entry Level, Enhanced Features, Internet of Things, Education, and Retired.
 >> 
