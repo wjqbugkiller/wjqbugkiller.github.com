@@ -1,8 +1,5 @@
 ## Welcome to last run
-
-You can use the [editor on GitHub](https://github.com/wjqbugkiller/wjqbugkiller.github.com/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is where a group of exhausted people try to make something valuable. Do not be surprised if you see this place randomly changing sometimes.  It will record the required homework weekly in time if they have not drowned in numerous tasks. If in such luck, they will OUTLAST time and catch up as quickly as possible. Cheer:sunglasses::beers:!!!
 
 -------------------------
 
@@ -117,12 +114,13 @@ void loop() {
 
 }
 ```
+[Video:Case 1]()
 
 > #### Case 2: LED light with a button: pro version
 
 >> - When we finished Case 1, we felt a little bit inconvenient in this application for we usually turn on the light with one press and then turn it off with another. In Case 1, however, the light is on immediately when we release the button. So, we did some changes to Case 1 code and made it a pro version.
 
->> - Here is the code and the video of this case:
+>> - Here is the code of this case:
 ```c
 const int buttonPin = 7;
 const int ledPin = 13;
@@ -156,6 +154,10 @@ void loop() {
   }
 }
 ```
+>> - Here is the video:
+
+[Video:Case 2]()
+
 
 > #### Case 3: try something new: Speech recognition module & Gesture recognition module
 >> - For some of our group members have tried Arduino before, we have some other modules which are not included in the basic Arduino kit. So we used the speech recognition module and the gesture recognition module in our Case 3.
@@ -323,6 +325,8 @@ void loop() {
 ```
 
 >> - Here is the video:
+
+[Video:Case 3]()
 
 -------------------------
 
