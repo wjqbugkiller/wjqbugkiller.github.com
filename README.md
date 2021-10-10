@@ -84,6 +84,8 @@ void loop() {
 }
 ```
 
+![视频]（/docs/小组作业图片素材/视频1.mp4）
+
 ### 模型
 这是一个测试链接[模型](https://github.com/wjqbugkiller/wjqbugkiller.github.com/blob/main/docs/%E6%A8%A1%E5%9E%8B.pptx)
 
