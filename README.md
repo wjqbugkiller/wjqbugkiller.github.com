@@ -13,6 +13,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ![图片](/docs/1.jpg "arduino""）![图片](/docs/1.jpg "arduino")
 
+> #### The function of Arduino
+>> Output device
+>> - Arduino can use existing electronic components, such as switches, drives or many other sensors to make an interactive device. It can be used to make hardware equipment such as electronic production or creative design prototypes.
+
 
 ### 小组作业介绍
 
