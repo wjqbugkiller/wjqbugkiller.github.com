@@ -95,7 +95,8 @@ This is where a group of exhausted people try to make something valuable. Do not
     <img src="/docs/图片/截屏2021-10-10 下午9.30.57.png">
 </center>
 
->> - Here is the code and the video of this case:
+>> - Here is the code of this case:
+
 ```c
 int ledPin=13;//led连接pin的13脚
 int inPin=7;
@@ -114,6 +115,7 @@ void loop() {
 
 }
 ```
+
 >> - Here is the video:
 >>> - [Video:Case 1]()
 
