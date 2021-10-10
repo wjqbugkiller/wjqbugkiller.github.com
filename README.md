@@ -163,7 +163,6 @@ void loop() {
 
 >>> - [Video:Case 2]()
 
-
 > #### Case 3: try something new: Speech recognition module & Gesture recognition module
 >> - For some of our group members have tried Arduino before, we have some other modules which are not included in the basic Arduino kit. So we used the speech recognition module and the gesture recognition module in our Case 3.
 
