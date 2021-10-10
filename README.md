@@ -42,6 +42,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 > ### Web
 >> Circuit drawing at: [Thinkercad](https://www.tinkercad.com/dashboard)
+>> 
 >> Recommendations for Color-Ring-Resistance calculation: [Elecfans](http://www.elecfans.com/tools/)
 
 ### 小组作业介绍
