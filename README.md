@@ -117,6 +117,10 @@ void loop() {
 
 }
 ```
+<video id="video" controls="" preload="none" poster="封面">
+      <source id="mp4" src="docs/小组作业图片素材/视频1.mp4" type="video/mp4">
+</videos>
+
 > #### Case 2: LED light with a button: pro version
 
 >> - When we finished Case 1, we felt a little bit inconvenient in this application for we usually turn on the light with one press and then turn it off with another. In Case 1, however, the light is on immediately when we release the button. So, we did some changes to Case 1 code and made it a pro version.
@@ -358,3 +362,5 @@ void loop() {
 <center class="half">
     <img src="/docs/图片/截屏2021-10-10 下午10.12.03.png">
 </center>
+------------------------
+
