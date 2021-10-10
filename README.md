@@ -4,9 +4,11 @@ You can use the [editor on GitHub](https://github.com/wjqbugkiller/wjqbugkiller.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### 基础介绍
 
-![avatar](https://raw.githubusercontent.com/wjqbugkiller/wjqbugkiller.github.com/main/docs/1.jpg)
+![avatar](https://raw.githubusercontent.com/wjqbugkiller/wjqbugkiller.github.com/main/docs/2.jpg)
+
+### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
