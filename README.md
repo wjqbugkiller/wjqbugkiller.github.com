@@ -48,12 +48,16 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 <center class="half">
     <img src="/docs/图片/截屏2021-10-10 下午9.12.44.png">
 </center>
->> 
+
 >> - There are many types of Arduino development board, which can be roughly divided into five categories: Entry Level, Enhanced Features, Internet of Things, Education, and Retired.
 >> 
 >> - You can view all of them from the official website:[Arduino.Products](https://www.arduino.cc/en/Main/Products)
 >> 
 >> - There are not much options for us, we got only Arduino UNO. We have two pieces in our hands. One is turquoise and the other is black. They are both made in China. We can easily buy them in a cheap price.
+
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午9.15.21.png">
+</center>
 
 > #### Connection with computer
 >> Wire
