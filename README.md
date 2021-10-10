@@ -354,7 +354,7 @@ void loop() {
 <center class="half">
     <img src="/docs/模型图片/动图1.gif">
     <img src="/docs/模型图片/动图3.gif">
-    <img src="/docs/模型图片/动图4.gi">
+    <img src="/docs/模型图片/动图4.gif">
 </center>
 
 > #### Components
