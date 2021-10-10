@@ -63,13 +63,21 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 >> Wire
 >> 
 >> - Two types of wires in our group
->> 
+
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午9.17.38.png">
+</center>
+
 >> Development board and port selection
 >> - ‘Arduino on comX’ is in the lower right corner of the Arduino IDE. X stands for number.
 >> 
 >> - Click the ‘工具 – 开发板’ at the toolbar and choose the Arduino type. 
 >> 
 >> - Then select the comX in the ‘工具-端口’.
+
+<center class="half">
+    <img src="/docs/图片/截屏2021-10-10 下午9.19.44.png">
+</center>
 
 > #### Web
 >> Circuit drawing at: [Thinkercad](https://www.tinkercad.com/dashboard)
