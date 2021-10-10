@@ -117,9 +117,6 @@ void loop() {
 
 }
 ```
-<video id="video" controls="" preload="none">
-      <source id="mp4" src="docs/小组作业图片素材/视频1.mp4" type="video/mp4">
-</videos>
 
 > #### Case 2: LED light with a button: pro version
 
